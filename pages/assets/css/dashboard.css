@@ -1,0 +1,136 @@
+.bg-solitude { background-color: #E5F2FE !important; }
+.bg-zanah { background-color: #D6EDDA !important; }
+.bg-snuff { background-color: #E5DEF0 !important; }
+.bg-janna { background-color: #F6F0D8 !important; }
+.text-black { color: #000000; }
+
+.p15px {
+    padding: 15px;
+}
+
+.w100px { width: 100px; }
+
+.program-intro-block {
+    border-radius: 30px;
+    padding: 25px 20px;
+}
+
+.program-entrance-block {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border: 2px dashed #979797;
+    box-sizing: border-box;
+    border-radius: 30px;
+    width: 100%;
+    height: 100%;
+    min-height: 212px;
+}
+
+.icon-add-new {
+    width: 103px;
+    height: 103px;
+}
+
+.btn-context {
+    background: no-repeat center url('../img/context-menu.svg');
+    width: 40px;
+    height: 40px;
+    cursor: pointer;
+}
+
+.icon-raw {
+    height: 42px;
+}
+
+.progress-block {
+    width: 175px;
+}
+
+.layout-all {
+    background-color: #ffffff;
+    height: 6px;
+    border-radius: 7px;
+    overflow: hidden;
+    width: 100%;
+}
+
+.layout-queue {
+    background-color: #1F95EE;
+    height: 100%;
+    transition: width .5s ease-in-out;
+    border-radius: 6px;
+}
+
+.service-block {
+    padding: 40px;
+    display: flex !important;
+    align-items: start;
+    justify-content: flex-start;
+    position: relative;
+    height: 100%;
+    min-height: 150px;
+}
+
+.service-block img {
+    width: 50px;
+    margin-right: 20px;
+}
+
+.cars-service-block {
+    background: no-repeat center/cover url(../img/bg-cars.svg);
+}
+
+.cars-service-block img { width: 70px !important; }
+
+.realty-service-block {
+    background: no-repeat center/cover url(../img/bg-realty.svg);
+}
+
+.marketplace-service-block {
+    background: no-repeat center/cover url(../img/bg-merchant.svg);
+}
+
+.oceanpay-service-block {
+    background: no-repeat center/cover url(../img/bg-oceanpay.svg);
+}
+
+.cron-service-block {
+    background: no-repeat center/cover url(../img/bg-cron.svg);
+}
+
+.savings-service-block {
+    background: no-repeat center/cover url(../img/bg-savings.svg);
+}
+
+.service-block .btn-context {
+    position: absolute;
+    top: 25px;
+    right: 25px;
+}
+
+.queue-cup-icon {
+    height: 52px;
+    width: 45px;
+}
+
+.rounded-frame-white {
+    background-color: #ffffff;
+    padding: 13px;
+    width: 80px;
+    height: 80px;
+    border-radius: 50%;
+}
+
+.rounded-frame-white img {
+    height: 100% !important;
+    width: unset;
+    display: block;
+    margin: 0 auto;
+}
+
+@media screen and (max-width: 480px) {
+    .service-block { padding: 15px; }
+    .service-block .btn-context { right: 5px; }
+
+}
