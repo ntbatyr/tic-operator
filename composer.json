@@ -1,0 +1,19 @@
+{
+    "name": "batyr/tic-operator",
+    "type": "project",
+    "authors": [
+        {
+            "name": "Batyr",
+            "email": "ntbatyr@mail.ru"
+        }
+    ],
+    "require": {
+        "illuminate/database": "5.7.19"
+    },
+    "autoload": {
+        "psr-4": {
+            "Controllers\\": "src/controllers/",
+            "Models\\": "src/models/"
+        }
+    }
+}

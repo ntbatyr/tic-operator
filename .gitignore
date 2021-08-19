@@ -6,3 +6,5 @@ modules
 storage
 .idea
 var
+
+/vendor/
