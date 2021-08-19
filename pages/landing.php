@@ -46,5 +46,5 @@
 </style>
 
 <div class="title m-b-md">
-    ПНК ТИК
+    КПК ТИК
 </div>
