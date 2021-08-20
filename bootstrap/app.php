@@ -1,9 +1,7 @@
 <?php
-echo __DIR__;
-die();
+require __DIR__ . '../vendor/autoload.php';
+require __DIR__ . '../helpers.php';
 
- require $_SERVER['DOCUMENT_ROOT'] . '/vendor/autoload.php';
- require __DIR__ . 'helpers.php';
+use Models\Database;
 
- use Models\Database;
- new Database();
+new Database();
