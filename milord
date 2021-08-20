@@ -8,6 +8,9 @@ use Cmd\Kernel;
 $command = $argv[1];
 $arguments = array_slice($argv, 2);
 
+print_r($command);
+print_r($arguments);
+
 try {
     $kernel = new Kernel($command, $arguments);
 } catch (Throwable $exception) {

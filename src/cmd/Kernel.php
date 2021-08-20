@@ -9,7 +9,7 @@ class Kernel
         'migrate' => Migrate::class,
     ];
 
-    public function __construct(string $command, array $arguments)
+    public function __construct(string $command, array $arguments = [])
     {
         if (!isset($this->commands[$command]))
             throw new \Exception('Command not found');
