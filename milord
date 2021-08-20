@@ -2,17 +2,14 @@
 <?php
 require_once __DIR__.'/bootstrap/app.php';
 
-use Cmd\Kernel;
+use Cmd\Executor;
 
 
 $command = $argv[1];
 $arguments = array_slice($argv, 2);
 
-print_r($command);
-print_r($arguments);
-
 try {
-    $kernel = new Kernel($command, $arguments);
+    $kernel = new Executor($command, $arguments);
 } catch (Throwable $exception) {
     echo $exception->getMessage();
     echo $exception->getTraceAsString();

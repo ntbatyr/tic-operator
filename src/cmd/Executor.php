@@ -2,9 +2,9 @@
 
 namespace Cmd;
 
-class Kernel
+class Executor
 {
-    private array $commands = [
+    private $commands = [
         'make:migration' => Migration::class,
         'migrate' => Migrate::class,
     ];
