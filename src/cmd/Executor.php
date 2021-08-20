@@ -19,7 +19,7 @@ class Executor
         return $this->execute($handler, $arguments);
     }
 
-    private function execute(Command $handler, array $arguments = [])
+    private function execute(Command $handler, array $arguments = []): bool
     {
         return $handler::run($arguments);
     }
