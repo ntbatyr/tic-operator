@@ -3,7 +3,7 @@
 <?php
 $dbConf = app_config('database');
 
-dd($dbConf);
+dd($dbConf, $dbConf['default']);
 ?>
 
 <?php
