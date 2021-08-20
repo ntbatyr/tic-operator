@@ -7,9 +7,9 @@ if (!function_exists('app_config')) {
         if(empty($name))
             return [];
 
-        if (!file_exists($_SERVER['DOCUMENT_ROOT'] ."/app_configs/{$name}.php"))
+        if (!file_exists(APP_ROOT."/app_configs/{$name}.php"))
             return [];
 
-        return require $_SERVER['DOCUMENT_ROOT'] ."/app_configs/{$name}.php";
+        return require APP_ROOT ."/app_configs/{$name}.php";
     }
 }

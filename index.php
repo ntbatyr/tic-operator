@@ -1,12 +1,6 @@
 <?php require($_SERVER["DOCUMENT_ROOT"]."/bitrix/header.php"); ?>
 
 <?php
-$dbConf = app_config('database');
-
-dd($dbConf, $dbConf['default']);
-?>
-
-<?php
 /**
  * @var CUser $USER
  */
