@@ -1,4 +1,10 @@
-<? require($_SERVER["DOCUMENT_ROOT"]."/bitrix/header.php"); ?>
+<?php require($_SERVER["DOCUMENT_ROOT"]."/bitrix/header.php"); ?>
+
+<?php
+$dbConf = app_config('database');
+
+dd($dbConf);
+?>
 
 <?php
 /**
@@ -12,4 +18,4 @@ else
 ?>
 
 
-<? require($_SERVER["DOCUMENT_ROOT"]."/bitrix/footer.php"); ?>
+<?php require($_SERVER["DOCUMENT_ROOT"]."/bitrix/footer.php"); ?>
