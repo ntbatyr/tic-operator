@@ -21,6 +21,6 @@ class Executor
 
     private function execute(Command $handler, array $arguments = []): bool
     {
-        return $handler::run($arguments);
+        return $handler->run($arguments);
     }
 }
