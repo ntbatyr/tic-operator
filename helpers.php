@@ -17,10 +17,9 @@ if (!function_exists('app_config')) {
 if (!function_exists('flashRedirect')){
     function flashRedirect(string $url, array $content)
     {
-        $_SESSION['flash'] = $content;
-        dd($_SESSION);
-        die();
+        global $_SESSION;
 
+        $_SESSION['flash'] = $content;
         header("Location: {$url}");
     }
 }
