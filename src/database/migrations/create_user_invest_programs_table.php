@@ -5,7 +5,7 @@ use Illuminate\Database\Schema\Blueprint;
 
 Capsule::schema()->dropIfExists('user_invest_programs');
 
-Capsule::schema()->table('user_invest_programs', function (Blueprint $table) {
+Capsule::schema()->create('user_invest_programs', function (Blueprint $table) {
     try {
         $table->increments('id');
         $table->bigInteger('user_id');

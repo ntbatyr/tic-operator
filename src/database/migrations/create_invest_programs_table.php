@@ -5,7 +5,7 @@ use Illuminate\Database\Schema\Blueprint;
 
 Capsule::schema()->dropIfExists('invest_programs');
 
-Capsule::schema()->table('invest_programs', function (Blueprint $table) {
+Capsule::schema()->create('invest_programs', function (Blueprint $table) {
     try {
         $table->increments('id');
         $table->string('name');
