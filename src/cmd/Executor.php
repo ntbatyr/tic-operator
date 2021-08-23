@@ -15,6 +15,7 @@ class Executor
             throw new \Exception('Command not found');
 
         $handler = new $this->commands[$command]();
+        echo "Executing command {$command} handler {$this->commands[$command]} \n";
 
         return $this->execute($handler, $arguments);
     }
