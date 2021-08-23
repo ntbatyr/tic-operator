@@ -13,8 +13,12 @@ class Migrate implements Command
             $migrated = \Models\Migration::where('migration', $fileName)
                 ->first();
 
+            echo "Checkin migration existence {$fileName} \n";
+
             if (!empty($migrated))
                 continue;
+
+            echo "File not exists, continuing migrate \n";
 
             include $file;
 
