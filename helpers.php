@@ -27,7 +27,7 @@ if (!function_exists('getInvestmentPrograms')) {
     {
         global $db;
 
-        $q = "select * from InvesmentPrograms";
+        $q = "select * from InvestmentPrograms";
         return $db->query($q)->fetchAll();
     }
 }
