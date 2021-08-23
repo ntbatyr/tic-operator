@@ -21,3 +21,13 @@ if (!function_exists('flashRedirect')){
         header("Location: {$url}");
     }
 }
+
+if (!function_exists('getInvestmentPrograms')) {
+    function getInvestmentPrograms()
+    {
+        global $db;
+
+        $q = "select * from InvesmentPrograms";
+        return $db->query($q)->fetchAll();
+    }
+}
