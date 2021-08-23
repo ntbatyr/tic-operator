@@ -3,7 +3,7 @@
 return [
     'default' => [
         'driver' => 'mysql',
-        'host' => 'localhost',
+        'host' => '127.0.0.1',
         'database' => 'operator_db',
         'username' => 'root',
         'password' => '23011A413',
