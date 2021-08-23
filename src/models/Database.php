@@ -13,6 +13,9 @@ class Database
         $capsule = new Capsule();
         $capsule->addConnection($dbConfig['default']);
 
+        $capsule->setAsGlobal();
         $capsule->bootEloquent();
+
+        return $capsule;
     }
 }
