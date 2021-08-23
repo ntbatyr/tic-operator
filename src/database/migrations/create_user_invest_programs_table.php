@@ -10,7 +10,7 @@ if (!Capsule::schema()->hasTable('user_invest_programs')) {
         $table->bigInteger('invest_program_id');
         $table->decimal('amount', 12, 6);
         $table->timestamp('created_at')->useCurrent();
-        $table->timestamp('updated_at')->useCurrent()->change();
+        $table->timestamp('updated_at')->useCurrent();
         $table->unique(['user_id', 'invest_program_id']);
     });
 }

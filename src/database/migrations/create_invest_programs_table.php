@@ -11,7 +11,7 @@ if (!Capsule::schema()->hasTable('invest_programs')) {
         $table->float('annual_percent');
         $table->boolean('active')->default(0);
         $table->timestamp('created_at')->useCurrent();
-        $table->timestamp('updated_at')->useCurrent()->change();
+        $table->timestamp('updated_at')->useCurrent();
     });
 }
 
