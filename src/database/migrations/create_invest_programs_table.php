@@ -3,7 +3,7 @@
 use Illuminate\Database\Capsule\Manager as Capsule;
 use Illuminate\Database\Schema\Blueprint;
 
-Capsule::schema()->create('invest_programs', function (Blueprint $table) {
+Capsule::schema()->table('invest_programs', function (Blueprint $table) {
     $table->increments('id');
     $table->string('name');
     $table->decimal('min_deposit', 12, 6);

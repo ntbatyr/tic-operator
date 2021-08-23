@@ -3,7 +3,7 @@
 use Illuminate\Database\Capsule\Manager as Capsule;
 use Illuminate\Database\Schema\Blueprint;
 
-Capsule::schema()->create('user_invest_programs', function (Blueprint $table) {
+Capsule::schema()->table('user_invest_programs', function (Blueprint $table) {
     $table->increments('id');
     $table->bigInteger('user_id');
     $table->bigInteger('invest_program_id');
