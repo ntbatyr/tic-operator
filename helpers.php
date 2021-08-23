@@ -18,6 +18,9 @@ if (!function_exists('flashRedirect')){
     function flashRedirect(string $url, array $content)
     {
         $_SESSION['flash'] = $content;
+        dd($_SESSION);
+        die();
+
         header("Location: {$url}");
     }
 }
