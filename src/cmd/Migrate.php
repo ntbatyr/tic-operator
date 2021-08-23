@@ -18,9 +18,9 @@ class Migrate implements Command
             if (!empty($migrated))
                 continue;
 
-            echo "File not exists, continuing migrate \n";
+            echo "File not exists, continuing migrate {$file} \n";
 
-            include $file;
+            include APP_ROOT . "/src/database/migrations/{$file}";
 
             $migrated = new \Models\Migration([
                 'migration' => $fileName,
