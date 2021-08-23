@@ -13,3 +13,11 @@ if (!function_exists('app_config')) {
         return require APP_ROOT ."/app_configs/{$name}.php";
     }
 }
+
+if (!function_exists('flashRedirect')){
+    function flashRedirect(string $url, array $content)
+    {
+        $_SESSION['flash'] = $content;
+        header("Location: {$url}");
+    }
+}
