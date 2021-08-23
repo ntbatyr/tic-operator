@@ -3,6 +3,7 @@
  * @var $USER
  */
 require($_SERVER["DOCUMENT_ROOT"]."/bitrix/header.php");
+$db = \Bitrix\Main\Application::getConnection('server');
 
 $iPrograms = getInvestmentPrograms();
 
