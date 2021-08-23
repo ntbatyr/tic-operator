@@ -2,6 +2,7 @@
 
 use Illuminate\Database\Capsule\Manager as Capsule;
 use Illuminate\Database\Schema\Blueprint;
+use Illuminate\Support\Facades\DB;
 
 if (!Capsule::schema()->hasTable('user_invest_programs')) {
     Capsule::schema()->create('user_invest_programs', function (Blueprint $table) {
