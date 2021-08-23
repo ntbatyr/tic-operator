@@ -2,7 +2,6 @@
 
 use Illuminate\Database\Capsule\Manager as Capsule;
 use Illuminate\Database\Schema\Blueprint;
-use Illuminate\Support\Facades\DB;
 
 if (!Capsule::schema()->hasTable('user_invest_programs')) {
     Capsule::schema()->create('user_invest_programs', function (Blueprint $table) {
@@ -11,7 +10,7 @@ if (!Capsule::schema()->hasTable('user_invest_programs')) {
         $table->bigInteger('invest_program_id');
         $table->decimal('amount', 12, 6);
         $table->timestamp('created_at')->useCurrent();
-        $table->timestamp('updated_at')->default('CURRENT_TIMESTAMP ON UPDATE CURRENT_TIMESTAMP');
+        $table->timestamp('updated_at')->useCurrent()->change();
         $table->unique(['user_id', 'invest_program_id']);
     });
 }
