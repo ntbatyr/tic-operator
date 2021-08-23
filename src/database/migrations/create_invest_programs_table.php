@@ -10,8 +10,7 @@ if (!Capsule::schema()->hasTable('invest_programs')) {
         $table->decimal('min_deposit', 12, 6);
         $table->float('annual_percent');
         $table->boolean('active')->default(0);
-        $table->timestamp('created_at')->useCurrent();
-        $table->timestamp('updated_at')->useCurrent();
+        $table->timestamps();
     });
 }
 
