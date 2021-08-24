@@ -17,9 +17,18 @@ if (!function_exists('app_config')) {
 if (!function_exists('flashRedirect')){
     function flashRedirect(string $url, array $content)
     {
-        global $_SESSION;
+        $cookie = new \Bitrix\Main\Web\Cookie('flash', json_encode([
+            'status' => 'error',
+            'message' => 'message'
+        ]));
 
-        $_SESSION['flash'] = $content;
+        $cookie->setDomain('operator.tic');
+
+        \Bitrix\Main\Application::getInstance()
+            ->getContext()
+            ->getResponse()
+            ->addCookie($cookie);
+
         header("Location: {$url}");
     }
 }
